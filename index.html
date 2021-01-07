@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amina's Flutes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <nav id="nav-bar" class="header__navbar">
+            <img class="header__navbar--img" id="header-img" src="./img/flute.png" alt="">
+            <ul class="header__navbar--links">
+                <a class="nav-link" href="#features">
+                    <li>Reasons to Buy</li>
+                </a>
+                <a class="nav-link" href="#about-products">
+                    <li>Why Buy a Flute</li>
+                </a>
+                <a class="nav-link" href="#prices">
+                    <li>Flutes</li>
+                </a>
+                <a class="nav-link" href="#how-to-buy">
+                    <li>How to Buy</li>
+                </a>
+                <a class="nav-link" href="#newsletter">
+                    <li>Newsletter</li>
+                </a>
+
+            </ul>
+        </nav>
+        <h1 class="header__title">Amina's Flutes</h1>
+    </header>
+    <main>
+        <section id="features" class="features">
+            <h2 class="subtitle features__title">Reasons to Buy</h2>
+            <div class="features__reasons-to-buy">
+                <div class="features__individual">
+                    <img src="./img/price-tag.png" alt="">
+                    <p>Discounts Every Month!</p>
+                </div>
+                <div class="features__individual">
+                    <img src="./img/delivery-truck.png" alt="">
+                    <p>Fast Shipping</p>
+                </div>
+                <div class="features__individual">
+                    <img src="./img/drop-shipping.png" alt="">
+                    <p>Careful Delivery</p>
+                </div>
+                <div class="features__individual">
+                    <img src="./img/customer-service.png" alt="">
+                    <p>Great Customer Service</p>
+                </div>
+                <div class="features__individual">
+                    <img src="./img/secure-payment.png" alt="">
+                    <p>Secure Payment</p>
+                </div>
+                <div class="features__individual">
+                    <img src="./img/diamond.png" alt="">
+                    <p>High Quality Products</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-products" class="about-products">
+            <h2 class="subtitle about-products__title">What you can do with our flutes</h2>
+            <div class="about-products__video">
+                <iframe class="about-products__video--video" id="video"
+                    src="https://www.youtube.com/embed/is68rlOzEio" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="prices" class="prices">
+            <h2 class="subtitle prices__title">Available Flutes</h2>
+            <div class="prices__products">
+                <div class="products__individual">
+                    <img src="./img/transverse_flute.jpg" alt="">
+                    <div>
+                        <p>Transverse</p>
+                        <span> 200$ <del>250$</del></span>
+                    </div>
+                </div>
+                <div class="products__individual">
+                    <img src="./img/recorder_flute.jpg" alt="">
+                    <div>
+                        <p>Recorder</p>
+                        <span> 70$ <del>100$</del></span>
+                    </div>
+                </div>
+                <div class="products__individual">
+                    <img src="./img/chinese_flute.jpg" alt="">
+                    <div>
+                        <p>Chinese</p>
+                        <span> 40$ <del>50$</del></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="how-to-buy" class="how-to-buy">
+            <h2 class="subtitle how-to-buy__title">How to Buy</h2>
+            <ol>
+                <li>Choose your flute</li>
+                <li>Contact us to check the shipping for your location and the total price</li>
+                <li>Wait for your Amina's Flute in your home!</li>
+            </ol>
+        </section>
+        <section id="newsletter" class="newsletter">
+            <h2 class="subtitle newsletter__title">Subscribe our Newsletter</h2>
+            <form id="form" class="newsletter__form" action="https://www.freecodecamp.com/email-submit">
+                <label class="newsletter__form--label" for="name">Place your name here!</label>
+                <input class="newsletter__form--input" id="name" placeholder="Name" type="text" required>
+                <label class="newsletter__form--label" for="email">Place your email here!</label>
+                <input class="newsletter__form--input" id="email" type="email" name="email" placeholder="Email"
+                    required>
+                <input class="newsletter__form--submit" id="submit" type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Made with love by Mariana Amina</p>
+        
+    </footer>
+
+    <script src="./test/bundle.js"></script>
+</body>
+
+</html>

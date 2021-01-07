@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,800;1,400&display=swap');
+
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', 'Times New Roman', Times, serif ;
+}
+
+.header {
+    height: 100vh;
+    background: url(../img/background-header.jpg) center/cover fixed no-repeat ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.header__title {
+    background-color: rgba(243, 102, 66, 0.7);
+    height: 60vh;
+    padding: 0 30px;
+    margin: 0 30px;
+    width: 40%;
+    min-width: 400px;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navbar {
+    background-color: white;
+    border-left: 5px solid white;
+    width: 10%;
+    min-width: 130px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__navbar--links {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+a.nav-link {
+    text-decoration: none;
+    border-bottom: 5px solid rgb(245, 49, 0);
+    padding: 5px 5px 0 5px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+a.nav-link:hover {   
+    background-color: rgb(245, 49, 0);
+    color: white;
+}
+
+.header__navbar--img {
+    max-width: 70%;
+    align-self: center;
+}
+
+section {
+    width: 100%;
+    padding: 20vh 30px 15vh 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.subtitle{
+    background-color: rgba(243, 102, 66, 0.7);
+    margin: 0 30px 5vh 0;
+    width: 40%;
+    min-width: 400px;
+    height: 60vh;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__reasons-to-buy{
+    width: 40%;
+    min-width: 400px;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
+}
+
+.features__individual {
+    display: flex;
+    align-items: center;
+}
+
+.features__individual img {
+    max-width: 50px;
+    margin:0 15px 0 15px;
+}
+
+.features__individual p {
+    font-size: 1.5rem;
+}
+
+.about-products__video {
+    background-color: rgba(243, 102, 66, 0.7);
+    width: 40%;
+    height: 60vh;
+    min-height: 315px;
+    min-width: 560px;    
+    display: flex;
+    align-items: center;
+}
+
+.about-products__video--video{
+    width: 100%;
+    min-height: 315px;
+    min-width: 560px;
+    height: auto;
+}
+
+.prices__products{
+    width: 40%;
+    min-width: 400px;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products__individual { 
+    background-color: rgba(243, 102, 66, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 32%;
+}
+
+.products__individual img{
+    max-width: 90%;
+    border: 5px double rgb(243, 102, 66);
+}
+
+
+.products__individual p {
+    font-size: 1.5rem;
+}
+
+.products__individual span {
+    color: rgb(243, 102, 66);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.products__individual del {
+    color: rgb(75, 74, 74);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.how-to-buy ol {
+    width: 40%;
+    min-width: 400px;
+    height: 60vh;
+    font-size: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+ol li {
+    display: block;
+    background: #ddd;
+    color: #444;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.newsletter__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    min-width: 400px; 
+    height: 60vh;
+    
+}
+
+.newsletter__form--label {
+    font-size: 2rem;
+}
+
+.newsletter__form--input {
+    border: none;
+    border-left: 5px solid rgb(245, 49, 0);
+    border-bottom: 5px solid rgba(245, 49, 0, 0);
+    padding: 10px;
+    background-color: rgba(243, 101, 66, 0.349);
+    outline: none;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.newsletter__form--input:focus {
+    border-left: 5px solid rgba(245, 49, 0, 0);
+    border-bottom: 5px solid rgb(245, 49, 0);
+}
+
+.newsletter__form--submit {
+    color: white;
+    background-color: rgb(245, 49, 0);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    transition: all 0.3s;
+}
+
+.newsletter__form--submit:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(201, 40, 0);
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(216, 44, 1);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1255px){
+    .about-products__video {
+        min-height: 226px;
+        min-width: 400px;    
+    }
+    
+    .about-products__video--video{
+        min-height: 226px;
+        min-width: 400px;
+    }   
+}
+
+@media (max-width: 900px){
+    .header{
+        align-items: center;
+    }
+
+    
+    .header__navbar {
+        border-left: none;
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: scroll;
+    }
+
+    .header__navbar--img {
+        max-width: 10%;
+        align-self: center;
+    }
+
+    .header__navbar--links {
+        width: 70%;
+        height: 80%;
+        flex-direction: row;
+        min-width: 650px;
+    }
+
+    a.nav-link {
+        padding: 5px 5px 0 5px;
+        margin-left: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;       
+    }
+
+    .subtitle {
+        margin: 0 0 5vh 0;
+    }
+}
